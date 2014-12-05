@@ -22,7 +22,7 @@ module Guard
     private
 
     def bower_install
-      if system "bower install"
+      if system "rake bower:install"
         UI.info "Bower install"
         Notifier.notify "Bower install"
         true
