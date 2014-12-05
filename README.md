@@ -10,7 +10,7 @@ Add the gem to your `Gemfile`:
 
 ```ruby
 group :development do
-  gem 'guard-bower', require: false
+  gem 'guard-bower-rails', require: false
 end
 ```
 
@@ -28,7 +28,7 @@ Please read the [Guard usage doc](https://github.com/mickey/guard#readme)
 
 ```ruby
 guard :bower do
-  watch('bower.json')
+  watch('Bowerfile')
 end
 ```
 
